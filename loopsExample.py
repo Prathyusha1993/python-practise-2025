@@ -2,7 +2,7 @@
 
 for i in range(3):
     if i == 1:
-        continue
+        continue   #skip 1
     print(i)
 
 # while loop
