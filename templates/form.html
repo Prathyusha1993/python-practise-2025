@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask request Example</title>
+</head>
+<body>
+<h2>Submit form (POST)</h2>
+<form method="POST" action="/submit">
+    <label>Name:</label>
+    <input type="text" name="name" required/><br><br>
+
+    <label>Age:</label>
+    <input type="text" name="age" required/><br><br>
+
+    <button type="submit">Submit (POST)</button>
+</form>
+<hr>
+<h2>Test get request (query params)</h2>
+<p>try visting this url:</p>
+<code>http://127.0.0.1:5000/submit?name=John&age=30</code>
+</body>
+</html>

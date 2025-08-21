@@ -1,0 +1,19 @@
+<!--template inheritance-->
+<!--allows us to reuse common layouts 9like headers, footers, navigation bar)
+define a base template with placeholder called blocks
+extend it in child templates(home.html, about.html) etc..
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{ % block title %} My Website {% endblock %}</title>
+</head>
+<body>
+<header><h1>Flask App</h1></header>
+<main>
+    {% block content %} {% endblock %}
+</main>
+<footer><p> 2025 My App</p></footer>
+</body>
+</html>
